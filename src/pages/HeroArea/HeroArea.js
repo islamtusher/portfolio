@@ -23,7 +23,7 @@ const HeroArea = () => {
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal text-white p-0">
                         <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/'>Projects</Link></li>
+                        <li><HashLink smooth to='/home#projects'>Projects</HashLink></li>
                         <li><HashLink smooth to='/home#contact'>Contact</HashLink></li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@ const HeroArea = () => {
                         <div className="">
                             <h1 className="mb-3 text-5xl text-white font-bold">RAFIQUL ISLAM <span className='text-primary' >TUSHER</span> </h1>
                             <p className="mb-5 text-2xl text-white">I am <span className=' font-bold'>Full Stack Developer</span> </p>
-                            <button className="btn bg-primary"><a target='_blank'  href="https://drive.google.com/file/d/1RoWhQuR5hEn75DGd0W2f5gCgk8JCgwuI/view?usp=sharing">Get Resume</a></button>
+                            <a target='_blank'  href="https://drive.google.com/file/d/1RoWhQuR5hEn75DGd0W2f5gCgk8JCgwuI/view?usp=sharing"><button className="btn bg-primary">Get Resume</button></a>
                         
                         </div>
                     </div>

@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
     // const navigate = useNavigate()
     return (
-        <div>
-            <h1 className='mb-6'>Projects</h1>
+        <div id='projects'>
+            <h1 className='mt-12 text-[40px] text-primary text-center font-bold'>MY PROJECTS</h1>
+            <h1 className='mb-12 text-[18px] text-gray-600 text-center '>THOSE I HAVE DONE SUCCESSFULLY</h1>
             <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-12 lg:px-12 px-4">
                 <div class="card bg-base-100 shadow-xl">
                     <figure><img src="./images/p1.jpg" alt="project" /></figure>
