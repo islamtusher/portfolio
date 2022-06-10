@@ -11,7 +11,7 @@ const Project = ({ project }) => {
     return (
         <div>
             <div class="card bg-base-100 shadow-xl rounded-none">
-                <figure><img src={project.image} alt="project"/></figure>
+                <figure><img src={project.images[0]} alt="project"/></figure>
                 <div class="card-body gap-6">
                     <div className="flex justify-between items-center">
                         <h2 class="card-title">{project.title} </h2>
