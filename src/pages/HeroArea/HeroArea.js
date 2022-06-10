@@ -18,7 +18,7 @@ const HeroArea = () => {
                         <li><Link to='/'>Contact</Link></li>
                     </ul>
                     </div>
-                    <Link to='/' class="btn btn-ghost text-white normal-case text-xl">daisyUI</Link>
+                    <Link to='/' class="btn btn-ghost text-white normal-case text-xl">PORTFOLIO</Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal text-white p-0">
