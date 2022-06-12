@@ -20,9 +20,8 @@ const Contact = () => {
         });
     }
     return (
-        <div id='contact'>
-            <h1 className='mt-20 text-[40px] text-primary text-center font-bold'>CONTACT ME</h1>
-            <h1 className='mb-12 text-[18px] text-gray-600 text-center '>LET'S ME KNOW, WHAT IS IN YOUR MIEND</h1>
+        <div id='contact' className='mt-20'>
+            <h1 className='mb-10 text-xl text-primary  text-center '>WHAT IS IN YOUR MIEND</h1>
             <div class="hero  lg:w-3/4 mx-auto ">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <div class="text-center lg:text-left lg:pl-8">

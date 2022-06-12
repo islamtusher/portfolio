@@ -1,7 +1,7 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import React from 'react';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -25,7 +25,7 @@ const Details = () => {
                         <li><Link to='/'>Contact</Link></li>
                     </ul>
                     </div>
-                    <Link to='/' class="btn btn-ghost text-dark normal-case text-xl">PORTFOLIO</Link>
+                    <Link to='/' class="btn btn-ghost text-dark normal-case text-xl">RIT</Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal text-dark p-0">
@@ -35,8 +35,19 @@ const Details = () => {
                     </ul>
                 </div>
                 <div class="navbar-end text-dark">
-                    <Link to='/' class="mr-8">GitHub</Link>
-                    <Link to='/' class="">LinkedIn</Link>
+                <a target='_blank' rel="noreferrer" href='https://github.com/islamtusher'>                        
+                        <FontAwesomeIcon
+                            className='text-[27px] mr-6 text-dark hover:text-primary cursor-pointer'
+                            icon={faGithub}>
+                        </FontAwesomeIcon>
+                    </a>
+                    <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/rafiqul-islam-tusher/'>
+                        <FontAwesomeIcon
+                            className='text-[27px]  text-dark hover:text-primary cursor-pointer'
+                            icon={faLinkedin}>
+                        </FontAwesomeIcon>
+                    </a>
+                
                 </div>
             </div>
             {

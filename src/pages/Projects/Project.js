@@ -10,21 +10,43 @@ const Project = ({ project }) => {
     
     return (
         <div>
-            <div class="card bg-base-100 shadow-xl rounded-none">
+            <div class="card h-[550px] bg-base-100 shadow-xl rounded-none">
                 <figure><img src={project.images[0]} alt="project"/></figure>
-                <div class="card-body gap-6">
-                    <div className="flex justify-between items-center">
+                <div class="card-body p-3 lg:p-5 lg:pb-0 gap-y-4">
+                    <div className="flex flex-col items-center justify-between ">
                         <h2 class="card-title">{project.title} </h2>
-                        <div class="card-actions justify-end">
+                        <div class="card-actions justify-center items-center mt-6 lg:mt-0">
+                            <a className='hover:text-sky-400 text-primary font-bold' target='_blank' rel="noreferrer" href={project.clientCode}>
+                                Client Code 
+                            </a>
+                            <p className=' text-primary text-xl'>|</p>
                             {
-                                project.serverCode && <a target='_blank' rel="noreferrer" href={project.serverCode}><FontAwesomeIcon className='text-2xl mr-4' icon={faGithub}></FontAwesomeIcon></a>
+                                project.serverCode &&
+                                <>
+                                    <a className='hover:text-sky-400 text-primary font-bold' target='_blank' rel="noreferrer" href={project.serverCode}>
+                                    Server Code
+                                    </a>
+                                    <p className=' text-primary text-xl'>|</p>
+                                </>
                             }
-                            <a target='_blank' rel="noreferrer" href={project.clientCode}><FontAwesomeIcon className='text-2xl mr-4' icon={faGithub}></FontAwesomeIcon></a>
-                            <a target='_blank' rel="noreferrer" href={project.liveLink}><FontAwesomeIcon className='text-2xl' icon={faGlobe}></FontAwesomeIcon></a>
+                            <a className='hover:text-sky-400 text-primary font-bold' target='_blank' rel="noreferrer" href={project.liveLink}>
+                                Website
+                            </a>
                         </div>    
                     </div>                            
-                    <article title={project.description}>{project.description.slice(0,110)}...</article>
-                    <button onClick={()=>navigate(`/details/${project._id}`)} class="btn bg-primary font-normal">Details</button>
+                    <article title={project.description}>{project.description.slice(0, 110)}...</article>
+                    <div className="flex flex-row flex-wrap gap-2 ">
+                        {
+                            project?.tols?.map(tool =>
+                                <div class="badge  px-2 badge-primary badge-outline">
+                                    {tool}
+                                </div>)
+                        }
+
+                    </div>
+                </div>
+                <div className=" ">
+                    <button onClick={()=>navigate(`/details/${project._id}`)} class="btn w-full  bg-primary font-normal rounded-none">Details</button>
                 </div>
             </div>
         </div>
