@@ -5,7 +5,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .App {
   text-align: center;
 }
+.primary-btn{
+  background-color: transparent;
+  border: 1px solid rgb(84, 82, 92);
+  border-radius: 0;
+  font-size: large;
+  font-weight: normal;
+  padding: 0 20px;
+}
+.primary-btn:hover{
+  background-color: #0094cf;
+}
 
+.section-title{
+  /* text-5xl font-bold */
+  font-family: 'Poppins', sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+}
