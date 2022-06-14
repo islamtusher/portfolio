@@ -26,11 +26,11 @@ const HeroArea = () => {
                     </Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal text-white p-0">
-                        <li><Link to='/'>Home</Link></li>
-                        <li><HashLink smooth to='/home#projects'>Projects</HashLink></li>
-                        <li><HashLink smooth to='/home#about'>About</HashLink></li>
-                        <li><HashLink smooth to='/home#contact'>Contact</HashLink></li>
+                    <ul class="menu menu-horizontal text-white font-light p-0">
+                        <li><Link to='/'>HOME</Link></li>
+                        <li><HashLink smooth to='/home#projects'>PROJECTS</HashLink></li>
+                        <li><HashLink smooth to='/home#about'>ABOUT</HashLink></li>
+                        <li><HashLink smooth to='/home#contact'>CONTACT</HashLink></li>
                     </ul>
                 </div>
                 <div class="navbar-end text-white">                    
@@ -54,8 +54,8 @@ const HeroArea = () => {
                     <div className=" "></div>
                     <div className="hero-content text-center text-dark">
                         <div className="">
-                            <h1 className="mb-3 text-5xl text-white font-bold font-[Oswald] tracking-wider">RAFIQUL ISLAM <span className='text-primary' >TUSHER</span> </h1>
-                            <p className="mb-5 text-xl text-white uppercase tracking-wider">I AM <span className=' '>Full Stack Developer</span> </p>
+                            <h1 className="mb-3 text-6xl text-white font-bold font-[Oswald] tracking-wider">RAFIQUL ISLAM <span className='text-primary' >TUSHER</span> </h1>
+                            <p className="mb-5 text-lg font-light text-white uppercase tracking-wider">I AM <span className=' '>Full Stack Developer</span> </p>
                             <a target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1RoWhQuR5hEn75DGd0W2f5gCgk8JCgwuI/view?usp=sharing">
                                 <button className="btn bg-transparent border text-lg font-normal px-5 ">
                                     Get Resume

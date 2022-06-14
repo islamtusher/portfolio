@@ -26,4 +26,9 @@
   font-family: 'Poppins', sans-serif;
   font-size: 55px;
   font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.subtitle{
+  color: rgb(200, 199, 199);
+  /* font-weight: lighter; */
 }
