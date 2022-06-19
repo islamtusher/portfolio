@@ -5,30 +5,50 @@
 @tailwind components;
 @tailwind utilities;
 
+.common-btn{
+  position: relative;
+  overflow: hidden;
 
-.App {
-  text-align: center;
-}
-.primary-btn{
+  padding: 10px 22px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
   background-color: transparent;
-  border: 1px solid rgb(84, 82, 92);
-  border-radius: 0;
-  font-size: large;
-  font-weight: normal;
-  padding: 0 20px;
 }
-.primary-btn:hover{
+.common-btn::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-color: #0094cf;
+
+  z-index: -1;
+
+  transition: transform .2s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.common-btn:hover::before{
+  transform: scaleX(1);
+}
+.common-btn{
+  transition: color .2s ease-in;
+  z-index: 1;
+}
+.common-btn:hover{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .section-title{
-  /* text-5xl font-bold */
   font-family: 'Poppins', sans-serif;
   font-size: 55px;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color:#fff;
 }
 .subtitle{
   color: rgb(200, 199, 199);
-  /* font-weight: lighter; */
 }

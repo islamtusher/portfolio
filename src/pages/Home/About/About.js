@@ -18,9 +18,9 @@ const About = () => {
                         </article>
                         <div className="">
                             <HashLink smooth to='/home#projects'>
-                                <button className='btn bg-transparent border text-lg font-normal px-5 mr-5'>MY PROJECT</button>
+                                <button className='common-btn lg:mr-6'>MY PROJECTs</button>
                             </HashLink>
-                            <button className='btn primary-btn '>MY SKILLS</button>
+                            <button className='common-btn '>MY SKILLS</button>
                         </div>
                     </div>
                     <div class="card w-full lg:max-w-sm py-16 px-3 profile-card rounded-none font-normal">
