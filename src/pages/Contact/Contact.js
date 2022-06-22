@@ -51,10 +51,10 @@ const Contact = () => {
                             <div class="card-body p-0">
                                 <form ref={form} onSubmit={sendEmail} className="flex flex-col" >
                                     <div className="flex flex-col lg:flex-row w-full gap-4">
-                                        <input type="email" placeholder="email" class="input input-bordered border-gray-600 focus:border-primary text-white rounded bg-transparent focus:bg-transparent active:bg-transparent w-full" {...register("user_email", { required: true})} />
-                                        <input type="text" placeholder="Name" class="input input-bordered border-gray-600 focus:border-primary  text-white rounded bg-transparent w-full" {...register("user_name", { required: true})} />            
+                                        <input type="email" placeholder="Your Email" class="input border-0 border-b border-gray-600 focus:border-primary rounded-none text-white  bg-transparent focus:bg-transparent w-full px-0" {...register("user_email", { required: true})} />
+                                        <input type="text" placeholder="Your Name" class="input border-0 border-b border-gray-600 focus:border-primary rounded-none  text-white bg-transparent w-full px-0" {...register("user_name", { required: true})} />            
                                     </div>
-                                    <textarea type="text" placeholder="Your Message" class="input input-bordered border-gray-600 focus:border-primary text-white rounded bg-transparent my-6 py-2 h-[120px]" {...register("message", { required: true})} />
+                                    <textarea type="text" placeholder="Your Massage" class="input border-0 border-b border-gray-600 focus:border-primary rounded-none text-white  bg-transparent my-6 py-2 px-0 h-[120px]" {...register("message", { required: true})} />
                                     <button type="submit" className='common-btn w-[150px] mx-auto lg:mx-0'>submit </button>
                                 </form>
                             </div>

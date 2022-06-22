@@ -8,7 +8,7 @@ import './HeroArea.css'
 const HeroArea = () => {
     return (
         <div id='home' className="banner h-[100vh] bg-[url('/public/images/portfolioBanner.jpg')] bg-center bg-cover bg-fixed lg:px-20">
-            <div class="navbar max-w-[1428px] mx-auto pt-6 pr-8">
+            <div class="navbar max-w-[1428px] mx-auto pt-6 pr-8 font-[Montserrat] text-gray-100  tracking-wider">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -21,12 +21,13 @@ const HeroArea = () => {
                             <li><HashLink smooth to='/home#contact'>Contact</HashLink></li>
                         </ul>
                     </div>
-                    <Link to='/' class="btn btn-ghost text-white normal-case text-xl">
-                       <img className='w-[45px] ' src='./images/logo.png' alt='logo' />
+                    <Link to='/' class="btn btn-ghost normal-case text-xl">
+                       <img className='w-[45px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
+                       {/* <img className='w-[45px] ' src='./images/logo.png' alt='logo' /> */}
                     </Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal text-white font-light p-0">
+                    <ul class="menu menu-horizontal font-light p-0">
                         <li><Link to='/'>HOME</Link></li>
                         <li><HashLink smooth to='/home#projects'>PROJECTS</HashLink></li>
                         <li><HashLink smooth to='/home#about'>ABOUT</HashLink></li>
@@ -54,8 +55,8 @@ const HeroArea = () => {
                     <div className=" "></div>
                     <div className="hero-content text-center text-dark">
                         <div className="">
-                            <h1 className="mb-3 text-6xl text-white font-bold font-[Oswald] tracking-wider">RAFIQUL ISLAM <span className='text-primary' >TUSHER</span> </h1>
-                            <p className="mb-5 text-lg font-light text-white uppercase tracking-wider">I AM A <span className=' '>Full Stack Developer</span> </p>
+                            <h1 className="mb-3 text-6xl text-white font-bold font-[Oswald] tracking-wide ">RAFIQUL ISLAM <span className='text-primary' >TUSHER</span> </h1>
+                            <p className="mb-5 text-lg font-light text-gray-200 uppercase tracking-[4px] font-[Montserrat]">I AM A <span className=' '>Full Stack Developer</span> </p>
                             <a target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1RoWhQuR5hEn75DGd0W2f5gCgk8JCgwuI/view?usp=sharing">
                                 <button className="common-btn ">
                                     Get Resume
