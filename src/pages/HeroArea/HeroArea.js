@@ -16,6 +16,7 @@ const HeroArea = () => {
                         </label>
                         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to='/'>Home</Link></li>
+                            <li><HashLink smooth to='/home#skills'>SKILLS</HashLink></li>
                             <li><HashLink smooth to='/home#projects'>Projects</HashLink></li>
                             <li><HashLink smooth to='/home#about'>About</HashLink></li>
                             <li><HashLink smooth to='/home#contact'>Contact</HashLink></li>
@@ -29,6 +30,7 @@ const HeroArea = () => {
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal font-light p-0">
                         <li><Link to='/'>HOME</Link></li>
+                        <li><HashLink smooth to='/home#skills'>SKILLS</HashLink></li>
                         <li><HashLink smooth to='/home#projects'>PROJECTS</HashLink></li>
                         <li><HashLink smooth to='/home#about'>ABOUT</HashLink></li>
                         <li><HashLink smooth to='/home#contact'>CONTACT</HashLink></li>
