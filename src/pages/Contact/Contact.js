@@ -22,32 +22,32 @@ const Contact = () => {
     }
     return (
         <div id='contact' className=' py-20 px-8 bg-[#111] '>
-            <div className="lg:max-w-[65%] mx-auto">
-                <h1 className='mb-10 text-2xl text-primary text-center '>Let's Work Together</h1>
-                <div class="hero ">
-                    <div class="hero-content flex-col lg:items-start text-white lg:flex-row-reverse">
-                        <div class="flex flex-col gap-4 text-center lg:w-2/5 lg:text-left lg:pl-8">
-                            <h1 class="text-2xl font-bold font-[Oswald]">My Contacts</h1>
+            <div className="lg:max-w-[70%] mx-auto">
+                <h1 className='section-title text-center mb-4'>Get In Touch</h1>
+                <div class="hero place-items-stretch">
+                    <div class="hero-content flex-col-reverse lg:items-start text-white lg:flex-row-reverse">
+                        <div class="flex flex-col gap-4 text-center lg:w-2/5 lg:text-left lg:pl-20">
+                            <h1 class="text-2xl text-primary font-bold font-[Oswald]">My Contacts</h1>
                             <div className="">
                                 <p class="subtitle ">
-                                    If any message for me or any enquiry Please fell free to contact me 
+                                    Fell free to contact me 
                                 </p>
                             </div>
                             <div className="">
                                 <h1 className='font-bold text-lg'>Email</h1>
-                                <p className='subtitle font-thin text-[14px]'>tusher26997@gmail.com</p>
+                                <p className=' font-thin text-[16px]'>tusher26997@gmail.com</p>
                             </div>
                             <div className="">
                                 <h1 className='font-bold text-lg'>Phone</h1>
-                                <p className='subtitle font-thin text-[14px]'>tusher26997@gmail.com</p>
+                                <p className=' font-thin text-[16px]'>+88001643613878</p>
                             </div>
                             <div className="">
                                 <h1 className='font-bold text-lg'>Address</h1>
-                                <address className='subtitle font-thin text-[14px]'>Gulshan, Dhaka <br/> Bangladesh</address>
+                                <address className='subtitle font-thin text-[16px]'>Gulshan, Dhaka <br/> Bangladesh</address>
                             </div>
                         </div>
                         <div class="card flex-shrink-0 gap-5 rounded-none w-full lg:w-3/5 text-center lg:text-left">
-                            <h1 className='text-white text-2xl font-bold font-[Oswald]'>Quick Contct Form</h1>
+                            <h1 className='text-primary text-2xl font-bold font-[Oswald]'>Quick Contct Form</h1>
                             <div class="card-body p-0">
                                 <form ref={form} onSubmit={sendEmail} className="flex flex-col" >
                                     <div className="flex flex-col lg:flex-row w-full gap-4">
