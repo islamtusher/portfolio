@@ -12,7 +12,7 @@ const Details = () => {
     const projects = useProjects() // hook
     console.log(projects);
     return (
-        <div className='bg-[#191919] text-white'>
+        <div className=' bg-[#191919] text-white'>
             <div class="navbar px-20 ">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -55,7 +55,7 @@ const Details = () => {
                     <>
                         {
                             product._id === id && 
-                            <div className=" mt-16">
+                            <div className=" mt-8">
                                 <div class="hero items-start">
                                     <div class="hero-content flex-col ">
                                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -66,19 +66,35 @@ const Details = () => {
                                     </div>
                                 </div>
                                 <div className="max-w-[1360px] p-4 mx-auto ">
-                                    <div className="flex items-center my-4">
+                                    <div className=" my-4">
                                         <h1 class="text-3xl font-bold text-center">{product.title}</h1>
-                                        <a target='_blank' rel="noreferrer" href={product.clientCode}><FontAwesomeIcon className='text-3xl mx-6 mt-4' icon={faGithub}></FontAwesomeIcon></a>
-                                        <a target='_blank' rel="noreferrer" href={product.liveLink}><FontAwesomeIcon className='text-3xl mt-4' icon={faGlobe}></FontAwesomeIcon></a>        
+                                        <div class="card-actions justify-center items-center mt-6 lg:mt-0">
+                                            <a className='hover:text-sky-400 text-primary font-bold' target='_blank' rel="noreferrer" href={product.clientCode}>
+                                                Client Code 
+                                            </a>
+                                            <p className=' text-primary text-xl'>|</p>
+                                            {
+                                                product.serverCode &&
+                                                <>
+                                                    <a className='hover:text-sky-400 text-primary font-bold' target='_blank' rel="noreferrer" href={product.serverCode}>
+                                                    Server Code
+                                                    </a>
+                                                    <p className=' text-primary text-xl'>|</p>
+                                                </>
+                                            }
+                                            <a className='hover:text-sky-400 text-primary font-bold' target='_blank' rel="noreferrer" href={product.liveLink}>
+                                                Demo
+                                            </a>
+                                        </div>           
                                     </div>
-                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 ">
                                         <div className=''>
-                                            <h1 className='text-xl text-primary'>Explanation</h1>
-                                            <p class="">{product.description}</p>
+                                            <h1 className='text-xl text-center text-white mb-4'>Explanation</h1>
+                                            <p class="text-gray-200 text-justify text-lg">{product.description}</p>
                                         </div>   
                                         <div class="flex-col lg:flex-row">
-                                            <h1 className='text-xl text-primary text-center'>Applied Technologies</h1>
-                                            <div className=" grid grid-cols-1 lg:grid-cols-4 gap-4">
+                                            <h1 className='text-xl text-white text-center mb-4'>Applied Technologies</h1>
+                                            <div className=" grid grid-cols-3 lg:grid-cols-4 gap-4">
                                                 <div className="flex flex-col items-center justify-between gap-2">
                                                     <img className='w-[40px]' src="/images/skills/skill-2.png" alt='' />
                                                     <p  className=' text-lg text-gray-100  tracking-wider'>HTML</p>
@@ -126,13 +142,13 @@ const Details = () => {
                                                             </div>
                                                         
                                                         )                                                                                                                         
-                                                }
+                                                }            
                           
                                             </div>
                                         </div>
                                         <div>
-                                            <h1 className='text-xl text-primary text-center'>Features</h1>
-                                            <ol>
+                                            <h1 className='text-xl text-white text-center mb-4'>Features</h1>
+                                            <ul className='list-disc pl-6 text-gray-200 text-lg'>
                                                 {
                                                     product?.features.map(feature =>
                                                         <li>
@@ -140,7 +156,7 @@ const Details = () => {
                                                         </li>
                                                     )             
                                                 }
-                                            </ol>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
