@@ -1,5 +1,5 @@
 import React from 'react';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faJs } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useParams } from 'react-router';
@@ -12,8 +12,8 @@ const Details = () => {
     const projects = useProjects() // hook
     console.log(projects);
     return (
-        <div>
-            <div class="navbar px-20">
+        <div className='bg-[#191919] text-white'>
+            <div class="navbar px-20 ">
                 <div class="navbar-start">
                     <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -63,41 +63,84 @@ const Details = () => {
                                                 product.images.map(image => <img src={image}  class=" shadow-2xl" alt='iamge' />)
                                             }
                                         </div>
-                                        <div className='mt-12'>
-                                            <div className="flex items-center">
-                                                <h1 class="text-5xl font-bold">{product.title}</h1>
-                                                <a target='_blank' rel="noreferrer" href={product.clientCode}><FontAwesomeIcon className='text-3xl mx-6 mt-4' icon={faGithub}></FontAwesomeIcon></a>
-                                                <a target='_blank' rel="noreferrer" href={product.liveLink}><FontAwesomeIcon className='text-3xl mt-4' icon={faGlobe}></FontAwesomeIcon></a>        
-                                            </div>
-                                            <p class="py-6">{product.description}</p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="hero items-start">
-                                    <div class="hero-content flex-col lg:flex-row  w-full">
-                                        <div className=" flex flex-col items-start">
-                                            <h1 className='text-3xl text-primary'>Applied Technologies</h1>
-                                            <ul>
+                                <div className="max-w-[1360px] p-4 mx-auto ">
+                                    <div className="flex items-center my-4">
+                                        <h1 class="text-3xl font-bold text-center">{product.title}</h1>
+                                        <a target='_blank' rel="noreferrer" href={product.clientCode}><FontAwesomeIcon className='text-3xl mx-6 mt-4' icon={faGithub}></FontAwesomeIcon></a>
+                                        <a target='_blank' rel="noreferrer" href={product.liveLink}><FontAwesomeIcon className='text-3xl mt-4' icon={faGlobe}></FontAwesomeIcon></a>        
+                                    </div>
+                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+                                        <div className=''>
+                                            <h1 className='text-xl text-primary'>Explanation</h1>
+                                            <p class="">{product.description}</p>
+                                        </div>   
+                                        <div class="flex-col lg:flex-row">
+                                            <h1 className='text-xl text-primary text-center'>Applied Technologies</h1>
+                                            <div className=" grid grid-cols-1 lg:grid-cols-4 gap-4">
+                                                <div className="flex flex-col items-center justify-between gap-2">
+                                                    <img className='w-[40px]' src="/images/skills/skill-2.png" alt='' />
+                                                    <p  className=' text-lg text-gray-100  tracking-wider'>HTML</p>
+                                                </div>
+                                                <div className="flex flex-col items-center justify-between gap-2">
+                                                    <img className='w-[40px]' src="/images/skills/skill-3.png" alt='' />
+                                                    <p className=' text-lg text-gray-100 tracking-wider'>CSS</p>    
+                                                </div>
                                                 {
-                                                    product?.tols.map(tool =>
-                                                        <li>
-                                                            {tool}
-                                                        </li>
-                                                    )             
+                                                    product?.tols?.map(tool => 
+                                                            tool === "Bootstrap" &&
+                                                            <div className="flex flex-col items-center justify-between gap-2">
+                                                                <img className='w-[40px]' src="/images/skills/skill-6.png" alt='' />
+                                                                <p className=' text-lg text-gray-100 tracking-wider'>Bootstrap </p>
+                                                            </div>
+                                                        
+                                                        )                                                                                                                         
                                                 }
-                                            </ul>            
+                                                {
+                                                    product?.tols?.map(tool => 
+                                                            tool === "Tailwind CSS" &&
+                                                            <div className="flex flex-col items-center justify-end gap-2">
+                                                                <img className='w-[50px]' src="/images/skills/skill-8.png" alt='' />
+                                                                <p className=' text-lg text-gray-100 tracking-wider'>Tailwind </p>
+                                                            </div>
+                                                        
+                                                        )                                                                                                                         
+                                                }
+                                                
+                                                <div className="flex flex-col items-center justify-between gap-2">
+                                                    <img className='w-[35px]' src="/images/skills/skill-5.png" alt='' />
+                                                    <p  className=' text-lg text-gray-100 tracking-wider'>React</p>
+                                                </div>
+                                                <div className="flex flex-col items-center justify-between gap-2">
+                                                    <img className='w-[35px]' src="/images/skills/skill-7.png" alt='' />
+                                                    <p  className=' text-lg text-gray-100 tracking-wider'> Javascript</p>
+                                                </div>
+                                                    
+                                                {
+                                                    product?.tols?.map(tool => 
+                                                            tool === 'MongoDB' &&
+                                                            <div className="flex flex-col items-center justify-between gap-2">
+                                                                <img className='w-[40px]' src="/images/mongodb.png" alt='' />
+                                                                <p  className=' text-lg text-gray-100 tracking-wider'> MongoDB</p>
+                                                            </div>
+                                                        
+                                                        )                                                                                                                         
+                                                }
+                          
+                                            </div>
                                         </div>
                                         <div>
-                                            <h1 className='text-3xl text-primary'>Features</h1>
-                                            <ul>
+                                            <h1 className='text-xl text-primary text-center'>Features</h1>
+                                            <ol>
                                                 {
                                                     product?.features.map(feature =>
                                                         <li>
-                                                            {feature}
+                                                            {feature},
                                                         </li>
                                                     )             
                                                 }
-                                            </ul>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>

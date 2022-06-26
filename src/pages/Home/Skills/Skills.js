@@ -10,7 +10,7 @@ const Skills = () => {
             <div className="text-gray-100 tracking-wider text-center mb-8">
                 <h1 className=' section-title'>My Skills</h1>
                 <p className='text-gray-300 tracking-wider'>
-                    I have done a few projects, code with my experience technologies
+                    I have done a few projects, and code with my experienced in technologies
                     <FontAwesomeIcon className='ml-2 text-gray-500' icon={faArrowRight}></FontAwesomeIcon>
                     <HashLink smooth to='/home#projects' className='text-primary'> Projects</HashLink>
                 </p>
