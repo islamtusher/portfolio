@@ -16,6 +16,7 @@ function App() {
         {/* <Route path='/about' element={<Projects></Projects>}></Route> */}
         <Route path='/details/:id' element={<Details></Details>}></Route>
       </Routes>
+      <Contact></Contact>
       <Footer></Footer>
     </div>
   );

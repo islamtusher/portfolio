@@ -6,12 +6,16 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useProjects from '../../hooks/useProjects';
+import Aos from 'aos';
 
 const Details = () => {
     const { id } = useParams()
     const projects = useProjects() // Custom hook
+    Aos.init({
+        duration: 600
+    });
     return (
-        <div className="bg-[#111]">
+        <div id={id} className="bg-[#111]">
             <div className='min-h-[100vh] max-w-[1360px] mx-auto text-white'>
                 <div class="navbar mx-auto pt-6 pr-8 lg:px-2 font-[Montserrat] text-gray-100  tracking-wider">
                     <div class="navbar-start">
@@ -37,7 +41,7 @@ const Details = () => {
                             <li><HashLink smooth to='/home#skills'>SKILLS</HashLink></li>
                             <li><HashLink smooth to='/home#projects'>PROJECTS</HashLink></li>
                             <li><HashLink smooth to='/home#about'>ABOUT</HashLink></li>
-                            <li><HashLink smooth to='/details#contact'>CONTACT</HashLink></li>
+                            <li><HashLink smooth to={`/details/${id}#contact`}>CONTACT</HashLink></li>
                         </ul>
                     </div>
                     <div class="navbar-end text-white">                    
@@ -64,7 +68,7 @@ const Details = () => {
                                 <div className=" mt-8">
                                     <div class="hero items-start">
                                         <div class="hero-content  flex-col ">
-                                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                            <div data-aos="flip-up" className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                                                 {
                                                     product.images.map(image => <img src={image}  class=" shadow-2xl" alt='iamge' />)
                                                 }

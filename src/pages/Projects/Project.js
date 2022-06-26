@@ -9,10 +9,10 @@ import Aos from 'aos';
 const Project = ({ project }) => {
     const navigate = useNavigate()
     Aos.init({
-        duration: 400
+        duration: 600
     });
     return (
-        <div data-aos="zoom-out-down">
+        <div data-aos="fade-up" >
             <div class="card rounded-none">
                 <figure><img src={project.images[0]} alt="project"/></figure>
                 <div class="card-body p-3 lg:p-5 lg:pb-0 gap-y-4">
@@ -39,7 +39,7 @@ const Project = ({ project }) => {
                     </div> 
                 </div>
                 <div className="mt-4 text-center">
-                    <button onClick={()=>navigate(`/details/${project._id}`)} class="common-btn rounded-none">Details</button>
+                    <button onClick={()=>navigate(`/details/${project._id}`)} class="common-btn rounded-none mb-6">Details</button>
                 </div>
             </div>
         </div>

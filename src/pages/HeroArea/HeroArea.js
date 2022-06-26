@@ -1,13 +1,17 @@
 import { faGithub, faGithubAlt, faGithubSquare, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Aos from 'aos';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './HeroArea.css'
 
 const HeroArea = () => {
+    Aos.init({
+        duration: 600
+    });
     return (
-        <div id='home' className="banner h-[100vh] bg-[url('/public/images/portfolioBanner.jpg')] bg-center bg-cover bg-fixed lg:px-20">
+        <div id='home' className="banner min-h-[100vh] bg-[url('/public/images/portfolioBanner.jpg')] bg-center bg-cover bg-fixed lg:px-20">
             <div class="navbar max-w-[1428px] mx-auto pt-6 pr-8 font-[Montserrat] text-gray-100  tracking-wider">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -56,7 +60,7 @@ const HeroArea = () => {
                 <div className="hero min-h-screen  " >
                     <div className=" "></div>
                     <div className="hero-content text-center text-dark">
-                        <div className="">
+                        <div data-aos="fade-down" className="">
                             <h1 className="mb-3 text-6xl text-white font-bold font-[Oswald] tracking-wide ">RAFIQUL ISLAM <span className='text-primary' >TUSHER</span> </h1>
                             <p className="mb-5 text-lg font-light text-gray-200 uppercase tracking-[4px] font-[Montserrat]">I AM A <span className=' '>Full Stack Developer</span> </p>
                             <a target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1RoWhQuR5hEn75DGd0W2f5gCgk8JCgwuI/view?usp=sharing">

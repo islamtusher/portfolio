@@ -4,12 +4,8 @@ import Project from './Project';
 
 const Projects = () => {
     const projects = useProjects()
-    // "image": "https://i.ibb.co/PW8FmrC/p3.jpg",
-    // "image": "https://i.ibb.co/frj69dM/p2.jpg",
-    // "image": "https://i.ibb.co/vHp60kx/p1.jpg",
-    console.log(projects);
     return (
-        <div id='projects' className=" py-8 flex items-center justify-center bg-[#191919]">
+        <div id='projects' className="min-h-[100vh] flex items-center justify-center bg-[#191919] py-16 " >
             <div  className=' '>
                 <h1 id='title' className='section-title  text-center '>My Latest Projects</h1>
                 <h1 className='mb-12 text-[15px] subtitle text-center '>WORK I HAVE DONE </h1>
