@@ -15,7 +15,7 @@ const Skills = () => {
                     <HashLink smooth to='/home#projects' className='text-primary'> Projects</HashLink>
                 </p>
             </div>
-            <div className='w-[90%] max-w-[1300px]  lg:p-0 mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 lg:gap-4 justify-center items-center lg:items-end'>
+            <div className='w-[90%] max-w-[1300px]  lg:p-0 mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-x-4 gap-y-6 lg:gap-4 justify-center items-center lg:items-end'>
                 <div className="flex flex-col items-center gap-2">
                     <img className='w-[50px]' src="./images/skills/skill-2.png" alt='' />
                     <p  className=' text-lg text-gray-100  tracking-wider'>HTML</p>
@@ -30,12 +30,16 @@ const Skills = () => {
                     <p className=' text-lg text-gray-100 tracking-wider'>Bootstrap </p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
+                    <img className='w-[90px]' src="./images/skills/skill-8.png" alt='' />
+                    <p className=' text-lg text-gray-100 tracking-wider'>Tailwind </p>
+                </div>
+                <div className="flex flex-col items-center gap-2">
                     <img className='w-[50px]' src="./images/skills/skill-7.png" alt='' />
                     <p  className=' text-lg text-gray-100 tracking-wider'> Javascript</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                     <img className='w-[50px]' src="./images/skills/skill-5.png" alt='' />
-                    <p  className=' text-lg text-gray-100 tracking-wider'>React</p>
+                    <p  className=' text-lg text-gray-100 tracking-wider'>Reactjs</p>
                 </div>
                 
                 <div className="flex flex-col items-center gap-2">
@@ -45,10 +49,6 @@ const Skills = () => {
                 <div className="flex flex-col items-center gap-2">
                     <FontAwesomeIcon icon={faNodeJs} className='text-green-600 text-[50px]'></FontAwesomeIcon>
                     <p  className=' text-lg text-gray-100 tracking-wider'>Nodejs</p>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <FontAwesomeIcon icon={faGithub} className='text-white text-[50px]'></FontAwesomeIcon>
-                    <p  className=' text-lg text-gray-100 tracking-wider'>Github</p>
                 </div>
                 
                     {/* <FontAwesomeIcon icon={faHtml5} className='text-white text-[65px]'></FontAwesomeIcon>

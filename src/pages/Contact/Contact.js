@@ -21,12 +21,12 @@ const Contact = () => {
         });
     }
     return (
-        <div id='contact' className=' py-20 px-8 bg-[#111] '>
-            <div className="lg:max-w-[70%] mx-auto">
+        <div id='contact' className=' bg-[#111] '>
+            <div className="lg:max-w-[1100px] mx-auto py-20 px-8">
                 <h1 className='section-title text-center mb-4'>Get In Touch</h1>
                 <div class="hero place-items-stretch">
-                    <div class="hero-content flex-col-reverse lg:items-start text-white lg:flex-row-reverse">
-                        <div class="flex flex-col gap-4 text-center lg:w-2/5 lg:text-left lg:pl-20">
+                    <div class="hero-content flex-col-reverse lg:items-start text-white lg:flex-row-reverse gap-y-16">
+                        <div class="flex flex-col gap-4  text-center lg:w-2/5 lg:text-left lg:pl-20">
                             <h1 class="text-2xl text-primary font-bold font-[Oswald]">My Contacts</h1>
                             <div className="">
                                 <p class="subtitle ">

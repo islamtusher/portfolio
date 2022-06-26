@@ -14,7 +14,7 @@ const Footer = () => {
                         <div className="">
                             <div className="flex items-center mb-2">
                                 <HashLink smooth to='#home' class="">
-                                    <img className='w-[45px]' src='./images/logo.png' alt='logo' />
+                                    <img className='w-[45px]' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
                                 </HashLink>
                                 <p className=''>Rafiqul Islam Tusher</p>
                             </div>
