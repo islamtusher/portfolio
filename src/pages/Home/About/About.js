@@ -1,11 +1,8 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Aos from 'aos';
+
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import './About.css'
+import Aos from 'aos';
+import { HashLink } from 'react-router-hash-link';
 
 const About = () => {
     Aos.init({
@@ -27,7 +24,6 @@ const About = () => {
                             <HashLink smooth to='/home#contact'>
                                 <button className='common-btn'>Contact</button>
                             </HashLink>
-                            {/* <button className='common-btn '>MY SKILLS</button> */}
                         </div>
                     </div>
                     <div data-aos="fade-right" class="card w-full lg:max-w-sm py-16 px-3 profile-card rounded-none font-normal">

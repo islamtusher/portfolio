@@ -1,6 +1,5 @@
 import React from 'react';
-import { faGithub, faLinkedin, faJs, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';

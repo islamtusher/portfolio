@@ -1,10 +1,10 @@
-import { faGithub, faGithubAlt, faGithubSquare, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Aos from 'aos';
 import React from 'react';
+import './HeroArea.css'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import './HeroArea.css'
+import Aos from 'aos';
 
 const HeroArea = () => {
     Aos.init({
@@ -28,7 +28,6 @@ const HeroArea = () => {
                     </div>
                     <Link to='/' class="btn btn-ghost normal-case text-xl">
                        <img className='w-[45px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
-                       {/* <img className='w-[45px] ' src='./images/logo.png' alt='logo' /> */}
                     </Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">

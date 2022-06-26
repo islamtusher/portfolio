@@ -1,9 +1,5 @@
 import React from 'react';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router';
-import { Link } from 'react-router-dom';
 import Aos from 'aos';
 
 const Project = ({ project }) => {
@@ -17,7 +13,6 @@ const Project = ({ project }) => {
                 <figure><img src={project.images[0]} alt="project"/></figure>
                 <div class="card-body p-3 lg:p-5 lg:pb-0 gap-y-4">
                     <div className="flex flex-col items-center justify-between ">
-                        {/* <h2 class="card-title text-white">{project.title} </h2> */}
                         <div class="card-actions justify-center items-center mt-6 lg:mt-0">
                             <a className='hover:text-sky-400 text-primary font-bold' target='_blank' rel="noreferrer" href={project.clientCode}>
                                 Client Code 

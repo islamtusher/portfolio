@@ -1,21 +1,20 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 const Contact = () => {
-    const { register, handleSubmit, reset,getValues, formState: { errors } } = useForm(); 
+    const { register, } = useForm(); 
     const form = useRef();
+
     // Handle Login Form
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_ened8ke', 'template_61bo0hc', form.current, '84pwxDUnYcuH_WyGZ')
         .then((result) => {
-            console.log(result.text);
-            console.log('send successed');
             e.target.reset()
-            toast('Message sending Success')
+            toast('Message sending Successfull')
         }, (error) => {
             console.log(error.text);
         });
