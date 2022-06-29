@@ -15,23 +15,24 @@ const Details = () => {
     });
     return (
         <div id={id} className="bg-[#111]">
+            {/* /details/${id}#contact`} */}
             <div className='min-h-[100vh] max-w-[1360px] mx-auto text-white'>
-                <div class="navbar mx-auto pt-6 pr-8 lg:px-2 font-[Montserrat] text-gray-100  tracking-wider">
+                <div data-aos="fade-down" class="navbar max-w-[1428px] mx-auto pt-6 pr-8 font-[Montserrat] text-gray-100  tracking-wider">
                     <div class="navbar-start">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
-                            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#191919] rounded-box w-36">
                                 <li><Link to='/'>Home</Link></li>
                                 <li><HashLink smooth to='/home#skills'>SKILLS</HashLink></li>
                                 <li><HashLink smooth to='/home#projects'>Projects</HashLink></li>
                                 <li><HashLink smooth to='/home#about'>About</HashLink></li>
-                                <li><HashLink smooth to='/home#contact'>Contact</HashLink></li>
+                                <li><HashLink smooth to={`/details/${id}#contact`}>Contact</HashLink></li>
                             </ul>
                         </div>
-                        <Link to='/' class=" text-xl">
-                            <img className='w-[45px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />                        
+                        <Link to='/' class="btn btn-ghost normal-case text-xl">
+                        <img className='w-[45px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
                         </Link>
                     </div>
                     <div class="navbar-center hidden lg:flex">
@@ -52,7 +53,7 @@ const Details = () => {
                         </a>
                         <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/rafiqul-islam-tusher/'>
                             <FontAwesomeIcon
-                                className='text-[22px] text-white text-dark hover:text-primary cursor-pointer'
+                                className=' text-[22px] text-white text-dark hover:text-primary cursor-pointer'
                                 icon={faLinkedinIn}>
                             </FontAwesomeIcon>
                         </a>

@@ -7,9 +7,9 @@ import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
-        <div  className="bg-[#191919] text-gray-300 py-6">
-            <div data-aos="fade-down" className="max-w-[1428px] mx-auto px-12">
-                <div  className='grid grid-cols-1 lg:grid-cols-3 gap-y-6'>
+        <div className="bg-[#191919] text-gray-300 py-6">
+            <div  className="max-w-[1428px] mx-auto px-12">
+                <div   className='grid grid-cols-1 lg:grid-cols-3 gap-y-6'>
                     <div className="order-last order-1 flex flex-col items-center lg:items-start justify-center"> 
                         <div className="">
                             <div className="flex items-center mb-2">

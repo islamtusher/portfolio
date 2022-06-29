@@ -11,7 +11,7 @@ const Skills = () => {
     });
     return (
         <div  >
-            <div  id='skills' className="bg-[#191919] py-20 font-[Montserrat] ">
+            <div  id='skills' className="bg-[#151515] py-20 font-[Montserrat] ">
                 <div className="text-gray-100 tracking-wider text-center mb-8">
                     <h1 className=' section-title'>My Skills</h1>
                     <p className='text-gray-300 tracking-wider'>
@@ -56,9 +56,6 @@ const Skills = () => {
                         <p  className=' text-lg text-gray-100 tracking-wider'>Nodejs</p>
                     </div>
         
-                </div>
-                <div className="fixed top-20 left-5 ">
-                    <button className='common-btn '>Go Top</button>
                 </div>
             </div>
 

@@ -9,7 +9,7 @@
 .common-btn{
   position: relative;
   overflow: hidden;
-
+  /* color: #151515; */
   padding: 10px 22px;
   font-size: 18px;
   text-transform: uppercase;
