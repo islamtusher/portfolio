@@ -11,8 +11,8 @@ const HeroArea = () => {
         duration: 600
     });
     return (
-        <div id='home' className="banner min-h-[100vh] bg-[url('/public/images/portfolioBanner.jpg')] bg-center bg-cover bg-fixed lg:px-20">
-            <div class="navbar max-w-[1428px] mx-auto pt-6 pr-8 font-[Montserrat] text-gray-100  tracking-wider">
+        <div id='home' className=" banner min-h-[100vh] bg-[url('/public/images/portfolioBanner.jpg')] bg-center bg-cover bg-fixed lg:px-20">
+            <div data-aos="fade-down" class="navbar max-w-[1428px] mx-auto pt-6 pr-8 font-[Montserrat] text-gray-100  tracking-wider">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -48,7 +48,7 @@ const HeroArea = () => {
                     </a>
                     <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/rafiqul-islam-tusher/'>
                         <FontAwesomeIcon
-                            className='text-[22px] text-white text-dark hover:text-primary cursor-pointer'
+                            className=' text-[22px] text-white text-dark hover:text-primary cursor-pointer'
                             icon={faLinkedinIn}>
                         </FontAwesomeIcon>
                     </a>
@@ -56,14 +56,14 @@ const HeroArea = () => {
                 </div>
             </div>
             <div className="flex flex-row">
-                <div className="hero min-h-screen  " >
+                <div className="hero min-h-screen relative " >
                     <div className=" "></div>
                     <div className="hero-content text-center text-dark">
-                        <div data-aos="fade-down" className="">
+                        <div data-aos="fade-up" className=" ">
                             <h1 className="mb-3 text-6xl text-white font-bold font-[Oswald] tracking-wide ">RAFIQUL ISLAM <span className='text-primary' >TUSHER</span> </h1>
                             <p className="mb-5 text-lg font-light text-gray-200 uppercase tracking-[4px] font-[Montserrat]">I AM A <span className=' '>Full Stack Developer</span> </p>
                             <a target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1RoWhQuR5hEn75DGd0W2f5gCgk8JCgwuI/view?usp=sharing">
-                                <button className="common-btn ">
+                                <button className="common-btn animate-bounce ">
                                     Get Resume
                                 </button>
                             </a>

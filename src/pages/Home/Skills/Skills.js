@@ -1,4 +1,4 @@
-import { faBootstrap, faCss3, faGithub, faHtml5, faJs, faJsfiddle, faJsSquare, faNode, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import {  faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Aos from 'aos';
@@ -10,8 +10,8 @@ const Skills = () => {
         duration: 600
     });
     return (
-        <div  className="">
-            <div  id='skills' className="bg-[#191919] py-20 font-[Montserrat]">
+        <div  >
+            <div  id='skills' className="bg-[#191919] py-20 font-[Montserrat] ">
                 <div className="text-gray-100 tracking-wider text-center mb-8">
                     <h1 className=' section-title'>My Skills</h1>
                     <p className='text-gray-300 tracking-wider'>
@@ -25,7 +25,7 @@ const Skills = () => {
                         <img className='w-[50px]' src="./images/skills/skill-2.png" alt='' />
                         <p  className=' text-lg text-gray-100  tracking-wider'>HTML</p>
                     </div>
-                    <div className="flex flex-col items-center gap-2">
+                    <div className="flex flex-col items-center gap-2 ">
                         <img className='w-[50px]' src="./images/skills/skill-3.png" alt='' />
                         <p className=' text-lg text-gray-100 tracking-wider'>CSS</p>    
                     </div>
@@ -55,13 +55,10 @@ const Skills = () => {
                         <FontAwesomeIcon icon={faNodeJs} className='text-green-600 text-[50px]'></FontAwesomeIcon>
                         <p  className=' text-lg text-gray-100 tracking-wider'>Nodejs</p>
                     </div>
-                    
-                        {/* <FontAwesomeIcon icon={faHtml5} className='text-white text-[65px]'></FontAwesomeIcon>
-                        </div>
-                        <FontAwesomeIcon icon={faCss3} className='text-white text-[65px]'></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faJs} className='text-white text-[65px]'></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faReact} className='text-white text-[65px]'></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faBootstrap} className='text-white text-[65px]'></FontAwesomeIcon> */}
+        
+                </div>
+                <div className="fixed top-20 left-5 ">
+                    <button className='common-btn '>Go Top</button>
                 </div>
             </div>
 
