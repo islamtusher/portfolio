@@ -17,7 +17,7 @@ const Details = () => {
         <div id={id} className="bg-[#111]">
             {/* /details/${id}#contact`} */}
             <div className='min-h-[100vh] max-w-[1360px] mx-auto text-white'>
-                <div data-aos="fade-down" class="navbar max-w-[1428px] mx-auto pt-6 pr-8 font-[Montserrat] text-gray-100  tracking-wider">
+                <div data-aos="fade-down" class="navbar pr-5 max-w-[1428px] mx-auto pt-6 pr-8 font-[Montserrat] text-gray-100  tracking-wider">
                     <div class="navbar-start">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -31,8 +31,8 @@ const Details = () => {
                                 <li><HashLink smooth to={`/details/${id}#contact`}>Contact</HashLink></li>
                             </ul>
                         </div>
-                        <Link to='/' class="btn btn-ghost normal-case text-xl">
-                        <img className='w-[45px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
+                        <Link to='/' class="btn btn-ghost pl-0 normal-case text-xl">
+                            <img className='w-[45px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
                         </Link>
                     </div>
                     <div class="navbar-center hidden lg:flex">

@@ -9,6 +9,7 @@ import Skills from './Skills/Skills';
 const Home = () => {
     return (
         <div className=''>
+            
             <HeroArea></HeroArea>
             <Skills></Skills>
             <About></About>
