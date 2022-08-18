@@ -46,7 +46,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div class="card flex-shrink-0 gap-5 rounded-none w-full lg:w-3/5 text-center lg:text-left">
-                            <h1 className='text-primary text-2xl font-bold font-[Oswald]'>Quick Contct Form</h1>
+                            <h1 className='text-primary text-2xl font-bold font-[Oswald]'>Quick Contact Form</h1>
                             <div class="card-body p-0">
                                 <form ref={form} onSubmit={sendEmail} className="flex flex-col" >
                                     <div className="flex flex-col lg:flex-row w-full gap-4">

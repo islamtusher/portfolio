@@ -27,16 +27,16 @@ const HeroArea = () => {
                         </ul>
                     </div>
                     <Link to='/' class="btn btn-ghost normal-case text-xl">
-                       <img className='w-[45px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
+                       <img className='w-[35px] ' src='https://rokstar-react.netlify.app/_ipx/w_64,q_75/%2Fimages%2Flogo-light.png?url=%2Fimages%2Flogo-light.png&w=64&q=75' alt='logo' />
                     </Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal font-light p-0">
-                        <li><Link to='/'>HOME</Link></li>
-                        <li><HashLink smooth to='/home#skills'>SKILLS</HashLink></li>
-                        <li><HashLink smooth to='/home#projects'>PROJECTS</HashLink></li>
-                        <li><HashLink smooth to='/home#about'>ABOUT</HashLink></li>
-                        <li><HashLink smooth to='/home#contact'>CONTACT</HashLink></li>
+                        <li className='hover:text-primary'><Link to='/'>HOME</Link></li>
+                        <li className='hover:text-primary'><HashLink smooth to='/home#skills'>SKILLS</HashLink></li>
+                        <li className='hover:text-primary'><HashLink smooth to='/home#projects'>PROJECTS</HashLink></li>
+                        <li className='hover:text-primary'><HashLink smooth to='/home#about'>ABOUT</HashLink></li>
+                        <li className='hover:text-primary'><HashLink smooth to='/home#contact'>CONTACT</HashLink></li>
                     </ul>
                 </div>
                 <div class="navbar-end text-white">                    
